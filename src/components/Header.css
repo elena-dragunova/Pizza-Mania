@@ -1,0 +1,22 @@
+.header {
+  background-color: #FF0A11;
+  margin: 0 !important;
+}
+
+.main-menu {
+  margin: 0 !important;
+}
+
+.header .column {
+  padding: 20px !important;
+  text-align: right;
+  color: white;
+}
+
+.header .column.main-menu {
+  padding: 0 !important;
+}
+
+.header .column.home-page {
+  text-align: left;
+}
