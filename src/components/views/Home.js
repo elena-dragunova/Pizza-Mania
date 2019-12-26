@@ -9,7 +9,7 @@ class Home extends React.Component {
   }
 
   renderPromo() {
-    return this.props.products.map((product) => {
+    return this.props.promoProducts.map((product) => {
       return (
         <div key={product.id}>
           <h4>{ product.title }</h4>
@@ -31,7 +31,10 @@ class Home extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    products: state.products
+    products: state.products,
+    promoProducts: state.products.filter((product) => {
+      return product.promo === true;
+    })
   }
 };
 
