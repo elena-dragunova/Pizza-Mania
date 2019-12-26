@@ -11,7 +11,7 @@ class Home extends React.Component {
   renderPromo() {
     return this.props.products.map((product) => {
       return (
-        <div>
+        <div key={product.id}>
           <h4>{ product.title }</h4>
           <p>{ product.description }</p>
           <img src={ product.image } alt={product.title}/>
@@ -31,7 +31,7 @@ class Home extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    products: Object.values(state.products)
+    products: state.products
   }
 };
 
