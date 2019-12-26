@@ -1,0 +1,8 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-item {
+  margin-bottom: 10px;
+}

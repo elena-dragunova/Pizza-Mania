@@ -12,7 +12,7 @@ class Catalog extends React.Component {
   renderProducts() {
     return this.props.products.map((product) => {
       return (
-        <div className="card catalog-item">
+        <div className="card catalog-item" key={ product.id }>
           <div className="image">
             <img src={ product.image } alt={ product.title }/>
           </div>
