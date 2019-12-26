@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Pepperoni Pizza",
+      "description": "Very tasty",
+      "category": "pizza",
+      "image": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80",
+      "promo": true
+    },
+    {
+      "id": 2,
+      "title": "Tomato Pizza",
+      "description": "Fresh and juicy",
+      "category": "pizza",
+      "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "promo": false
+    },
+    {
+      "id": 3,
+      "title": "Fruits Salad",
+      "description": "Delicious",
+      "category": "salads",
+      "image": "https://images.unsplash.com/photo-1555057949-7e4a30956f1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "promo": false
+    },
+    {
+      "id": 4,
+      "title": "Vegetable Salad",
+      "description": "Light and healthy",
+      "category": "salads",
+      "image": "https://images.unsplash.com/photo-1529059997568-3d847b1154f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "promo": true
+    },
+    {
+      "id": 5,
+      "title": "Strawberry Smoothie",
+      "description": "Fresh and delicious",
+      "category": "drinks",
+      "image": "https://images.unsplash.com/photo-1524230789330-31ce487281ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "promo": true
+    }
+  ]
+}
