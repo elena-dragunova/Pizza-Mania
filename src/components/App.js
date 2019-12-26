@@ -2,6 +2,7 @@ import React from 'react'
 import { Router, Route } from 'react-router-dom'
 import history from '../history'
 import Header from './Header'
+import Footer from './Footer'
 import Home from './views/Home';
 import About from './views/About';
 import Catalog from './views/Catalog';
@@ -20,7 +21,7 @@ const App = () => {
           <Route path='/contacts' component={Contacts} />
           <Route path='/news' component={News} />
         </div>
-
+        <Footer/>
       </Router>
     </div>
   )

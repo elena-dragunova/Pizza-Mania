@@ -1,0 +1,26 @@
+.footer {
+  background-color: #1A348E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-menu {
+  padding: 40px;
+  text-align: center;
+}
+
+.footer-link {
+  margin: 0 10px;
+  font-size: 18px;
+  color: white;
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.25s ease-in-out;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: white;
+  border-bottom: 1px solid #fff;
+}
