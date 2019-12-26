@@ -1,14 +1,7 @@
 import React from 'react'
-import _ from 'lodash';
-import { connect } from 'react-redux';
-import { fetchProducts } from '../actions';
 import './Filter.css'
 
 class Filter extends React.Component {
-  componentDidMount() {
-    this.props.fetchProducts();
-  }
-
   renderCategories() {
     return this.props.categories.map((category) => {
       return (
@@ -32,35 +25,4 @@ class Filter extends React.Component {
   }
 }
 
-const getCategories = (products) => {
-  const categoriesTitles = _.uniq(products.map((product) => {
-    return product.category;
-  }));
-
-  const categories = [];
-
-  categoriesTitles.forEach((category) => {
-    const productOfCategory = products.find((product) => {
-      return product.category === category;
-    });
-
-    const image = productOfCategory.image;
-
-    categories.push( {
-      title: category,
-      image,
-    })
-  });
-
-  return categories;
-};
-
-const mapStateToProps = (state) => {
-  return {
-    categories: getCategories(state.products)
-  }
-};
-
-export default connect(mapStateToProps, {
-  fetchProducts,
-})(Filter);
+export default Filter;

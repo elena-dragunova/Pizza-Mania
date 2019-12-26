@@ -3,9 +3,10 @@ import { connect } from 'react-redux';
 import './Catalog.css'
 import Filter from '../Filter';
 import { fetchProducts } from '../../actions';
+import _ from 'lodash';
 
 class Catalog extends React.Component {
-  componentDidMount() {
+   componentDidMount() {
     this.props.fetchProducts();
   }
 
@@ -42,7 +43,7 @@ class Catalog extends React.Component {
     return (
       <div className="catalog-page">
         <div className="filter">
-          <Filter/>
+          <Filter categories={this.props.categories}/>
         </div>
         <div className="products ui cards">
           { this.renderProducts() }
@@ -52,9 +53,33 @@ class Catalog extends React.Component {
   }
 }
 
+const getCategories = (products) => {
+  const categoriesTitles = _.uniq(products.map((product) => {
+    return product.category;
+  }));
+
+  const categories = [];
+
+  categoriesTitles.forEach((category) => {
+    const productOfCategory = products.find((product) => {
+      return product.category === category;
+    });
+
+    const image = productOfCategory.image;
+
+    categories.push( {
+      title: category,
+      image,
+    })
+  });
+
+  return categories;
+};
+
 const mapStateToProps = (state) => {
   return {
     products: state.products,
+    categories: getCategories(state.products)
   }
 };
 
