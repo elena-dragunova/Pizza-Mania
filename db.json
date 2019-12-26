@@ -6,6 +6,7 @@
       "description": "Very tasty",
       "category": "pizza",
       "image": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80",
+      "price": 6.25,
       "promo": true
     },
     {
@@ -14,6 +15,7 @@
       "description": "Fresh and juicy",
       "category": "pizza",
       "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "price": 4.5,
       "promo": false
     },
     {
@@ -22,6 +24,7 @@
       "description": "Delicious",
       "category": "salads",
       "image": "https://images.unsplash.com/photo-1555057949-7e4a30956f1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "price": 3.75,
       "promo": false
     },
     {
@@ -30,6 +33,7 @@
       "description": "Light and healthy",
       "category": "salads",
       "image": "https://images.unsplash.com/photo-1529059997568-3d847b1154f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "price": 3.25,
       "promo": true
     },
     {
@@ -38,6 +42,7 @@
       "description": "Fresh and delicious",
       "category": "drinks",
       "image": "https://images.unsplash.com/photo-1524230789330-31ce487281ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "price": 3.5,
       "promo": true
     }
   ]

@@ -1,4 +1,4 @@
-.header {
+.navbar {
   background-color: #FF0A11;
   margin: 0 !important;
 }
@@ -7,16 +7,17 @@
   margin: 0 !important;
 }
 
-.header .column {
+.navbar .column {
   padding: 20px !important;
   text-align: right;
   color: white;
+  font-size: 20px;
 }
 
-.header .column.main-menu {
+.navbar .column.main-menu {
   padding: 0 !important;
 }
 
-.header .column.home-page {
+.navbar .column.home-page {
   text-align: left;
 }

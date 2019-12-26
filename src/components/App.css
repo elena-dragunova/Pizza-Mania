@@ -1,0 +1,9 @@
+.main-container {
+  min-height: calc(100vh - 14px);
+  display: flex;
+  flex-direction: column;
+}
+
+.main-grid {
+  flex-grow: 1;
+}

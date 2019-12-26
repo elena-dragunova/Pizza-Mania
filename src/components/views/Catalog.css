@@ -1,0 +1,31 @@
+.catalog-page {
+  display: flex;
+  padding: 60px 0;
+}
+
+.catalog-page .filter {
+  width: 300px;
+}
+
+.catalog-page .products {
+  flex-grow: 1;
+  max-width: calc(100% - 300px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.catalog-item {
+  margin: 10px !important;
+  width: calc(33.33% - 20px) !important;
+}
+
+.catalog-item-price {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.catalog-item-info {
+  display: flex;
+  justify-content: space-between;
+}

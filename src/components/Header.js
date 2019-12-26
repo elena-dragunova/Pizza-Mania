@@ -4,7 +4,7 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <nav className="ui grid header">
+    <nav className="ui grid navbar">
       <Link to='/' className="four wide column home-page">Home</Link>
       <div className="ui grid twelve wide column main-menu">
         <Link to='/about' className="four wide column">About</Link>

@@ -8,13 +8,14 @@ import About from './views/About';
 import Catalog from './views/Catalog';
 import Contacts from './views/Contacts';
 import News from './views/News';
+import './App.css'
 
 const App = () => {
   return (
-    <div>
+    <div className="main-container">
       <Router history={history}>
         <Header />
-        <div className="ui container">
+        <div className="ui container main-grid">
           <Route path='/' exact component={Home} />
           <Route path='/about' component={About} />
           <Route path='/catalog' component={Catalog} />
